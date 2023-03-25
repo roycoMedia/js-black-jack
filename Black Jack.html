@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="Black Jack.css">
+</head>
+<body>
+    <!-- <span id="num1-el"></span>
+    <span id="num2-el"></span>
+
+    <br>
+
+    <button onclick="add()">Add</button>
+    <button onclick="subtract()">Subtract</button>
+    <button onclick="divide()">Divide</button>
+    <button onclick="multiply()">Multiply</button>
+
+    <br>
+
+    <span id="sum-el"></span> -->
+
+
+    <!-- BLACKJACK GAME -->
+
+    <h1>Blackjack</h1>
+    <p id="message-el">Want to play a round?</p>
+    <p id="cards-el">Cards:</p>
+    <p id="sum-el">Sum: </p>
+
+    <button type="button" onclick="startGame()">START GAME</button>
+    <button type="button" onclick="newCard()">NEW CARD</button>
+
+    <p id="player-el"></p>
+
+    <div class="conte">
+        <input type="text" id="input-el" placeholder="Player Name" required> <br>
+
+        <button id="btn" type="submit" onclick="myfunction(); this.disabled = true">SUBMIT NAME</button>
+
+    
+        <p id="message"></p>
+    </div>
+
+
+    <div class="container">
+        <div class="bubbles">
+            <span style="--i:11"></span>
+            <span style="--i:20"></span>
+            <span style="--i:15"></span>
+            <span style="--i:25"></span>
+            <span style="--i:23"></span>
+            <span style="--i:12"></span>
+            <span style="--i:19"></span>
+            <span style="--i:15"></span>
+            <span style="--i:20"></span>
+            <span style="--i:25"></span>
+            <span style="--i:16"></span>
+            <span style="--i:18"></span>
+            <span style="--i:18"></span>
+            <span style="--i:11"></span>
+            <span style="--i:10"></span>
+            <span style="--i:12"></span>
+            <span style="--i:20"></span>
+            <span style="--i:22"></span>
+            <span style="--i:24"></span>
+            <span style="--i:11"></span>
+            <span style="--i:12"></span>
+            <span style="--i:13"></span>
+            <span style="--i:14"></span>
+            <span style="--i:15"></span>
+            <span style="--i:16"></span>
+            <span style="--i:11"></span>
+            <span style="--i:20"></span>
+            <span style="--i:15"></span>
+            <span style="--i:25"></span>
+            <span style="--i:23"></span>
+            <span style="--i:12"></span>
+            <span style="--i:19"></span>
+            <span style="--i:15"></span>
+            <span style="--i:20"></span>
+            <span style="--i:25"></span>
+            <span style="--i:16"></span>
+            <span style="--i:11"></span>
+            <span style="--i:13"></span>
+            <span style="--i:11"></span>
+            <span style="--i:10"></span>
+            <span style="--i:13"></span>
+            <span style="--i:12"></span>
+            <span style="--i:11"></span>
+            <span style="--i:11"></span>
+            <span style="--i:20"></span>
+            <span style="--i:15"></span>
+            <span style="--i:25"></span>
+            <span style="--i:23"></span>
+            <span style="--i:12"></span>
+            <span style="--i:19"></span>
+            <span style="--i:15"></span>
+            <span style="--i:20"></span>
+            <span style="--i:25"></span>
+            <span style="--i:16"></span>
+            <span style="--i:18"></span>
+            <span style="--i:18"></span>
+            <span style="--i:11"></span>
+            <span style="--i:10"></span>
+            <span style="--i:12"></span>
+            <span style="--i:20"></span>
+            <span style="--i:22"></span>
+            <span style="--i:24"></span>
+            <span style="--i:11"></span>
+            <span style="--i:12"></span>
+            <span style="--i:13"></span>
+            <span style="--i:14"></span>
+            <span style="--i:15"></span>
+            <span style="--i:16"></span>
+            <span style="--i:11"></span>
+            <span style="--i:19"></span>
+            <span style="--i:15"></span>
+            <span style="--i:20"></span>
+            <span style="--i:25"></span>
+            <span style="--i:16"></span>
+            <span style="--i:18"></span>
+            <span style="--i:18"></span>
+            <span style="--i:11"></span>
+            <span style="--i:10"></span>
+            <span style="--i:12"></span>
+            <span style="--i:20"></span>
+            <span style="--i:22"></span>
+            <span style="--i:24"></span>
+            <span style="--i:11"></span>
+            <span style="--i:12"></span>
+            <span style="--i:13"></span>
+            <span style="--i:14"></span>
+            <span style="--i:15"></span>
+            <span style="--i:16"></span>
+            <span style="--i:11"></span>
+            <span style="--i:19"></span>
+            <span style="--i:15"></span>
+            <span style="--i:20"></span>
+            <span style="--i:25"></span>
+            <span style="--i:16"></span>
+            <span style="--i:18"></span>
+            <span style="--i:18"></span>
+            <span style="--i:11"></span>
+            <span style="--i:10"></span>
+            <span style="--i:12"></span>
+            <span style="--i:20"></span>
+            <span style="--i:22"></span>
+            <span style="--i:24"></span>
+            <span style="--i:11"></span>
+            <span style="--i:12"></span>
+            <span style="--i:13"></span>
+            <span style="--i:14"></span>
+            <span style="--i:15"></span>
+            <span style="--i:16"></span>
+            <span style="--i:11"></span>
+        </div>
+    </div>
+
+    <!-- <span>&#9776; open</span> -->
+
+    <script src="Black Jack.js"></script>
+</body>
+</html>
